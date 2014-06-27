@@ -11,10 +11,34 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'built/css/app.css': 'scss/app.scss'
         }        
       }
     },
+    coffee: {
+            compile: {
+                files: {
+                    'built/js/Site.js': ['scripts/*.coffee']
+                }
+            }
+        },
+    assemble: {
+            options: {
+                flatten: true,
+                layout: ['templates/default.hbs']
+            },
+            site: {
+                src: 'pages/*.hbs',
+                dest: 'built/'
+            }
+        },
+        copy:{  
+            main:{
+                files:[
+                    {expand:true, src: "img/**", dest: "built/"}
+                ]
+            }
+        },
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
@@ -28,7 +52,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass','coffee','copy','assemble']);
   grunt.registerTask('default', ['build','watch']);
 }
