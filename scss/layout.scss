@@ -1,0 +1,37 @@
+.off-canvas-list{
+  li{
+    a{
+      &:hover{
+        background-color:#fff;
+      }
+
+      &#about:hover{
+        background: rgb(253,139,38);
+      }
+
+      &#proj:hover{
+        background: rgb(0,147,208);
+      }
+
+      &#news:hover{
+        background: rgb(16,134,110);
+      }
+
+      &#cal:hover{
+        background: rgb(213,42,39);
+      }
+
+      &#join:hover{
+        background: rgb(153,73,155);
+      }
+
+      &#blog:hover{
+        background: rgb(170,208,55);
+      }
+
+      &#join:hover{
+        background: rgb(220,97,38);
+      }
+    }
+  }
+}

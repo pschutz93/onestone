@@ -35,7 +35,8 @@ module.exports = function(grunt) {
         copy:{  
             main:{
                 files:[
-                    {expand:true, src: "img/**", dest: "built/"}
+                    {expand:true, src: "img/**", dest: "built/"},
+                    {expand:true, src:"js/**",dest:"built/"}
                 ]
             }
         },
@@ -47,6 +48,7 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+
     }
   });
 
@@ -56,6 +58,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('build', ['sass','coffee','copy','assemble']);
+  grunt.registerTask('build', ['sass','copy','assemble','coffee']);
   grunt.registerTask('default', ['build','watch']);
 }
