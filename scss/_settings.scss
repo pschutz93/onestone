@@ -695,10 +695,10 @@
  $tabbar-header-color: #000;
 // $tabbar-header-weight: $font-weight-bold;
 // $tabbar-header-line-height: $tabbar-height;
-// $tabbar-header-margin: 0;
+// $tabbar-header-margin: rem-calc(3);
 
 // Off Canvas Menu Variables
- $off-canvas-width: 110px;
+ $off-canvas-width: rem-calc(120);
  $off-canvas-bg: #fff;
 
 // Off Canvas Menu List Variables

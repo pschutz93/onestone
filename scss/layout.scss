@@ -1,37 +1,48 @@
-.off-canvas-list{
-  li{
-    a{
-      &:hover{
-        background-color:#fff;
+.off-canvas-list {
+  li {
+    a {
+      &:hover {
+        background-color: #fff;
       }
 
-      &#about:hover{
-        background: rgb(253,139,38);
+      &#about:hover {
+        background: rgb(253, 139, 38);
       }
 
-      &#proj:hover{
-        background: rgb(0,147,208);
+      &#proj:hover {
+        background: rgb(0, 147, 208);
       }
 
-      &#news:hover{
-        background: rgb(16,134,110);
+      &#news:hover {
+        background: rgb(16, 134, 110);
       }
 
-      &#cal:hover{
-        background: rgb(213,42,39);
+      &#cal:hover {
+        background: rgb(213, 42, 39);
       }
 
-      &#join:hover{
-        background: rgb(153,73,155);
+      &#join:hover {
+        background: rgb(153, 73, 155);
       }
 
-      &#blog:hover{
-        background: rgb(170,208,55);
+      &#blog:hover {
+        background: rgb(170, 208, 55);
       }
 
-      &#join:hover{
-        background: rgb(220,97,38);
+      &#join:hover {
+        background: rgb(220, 97, 38);
       }
     }
   }
 }
+
+.move-right .left-off-canvas-menu{
+  padding-right:rem-calc(2);
+}
+
+
+.tab-bar-section .logo {
+  margin-top: rem-calc(3);
+  height: rem-calc(44);
+}
+
