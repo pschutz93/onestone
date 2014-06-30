@@ -1,50 +1,52 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{title}}</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css"/>
+    {{{styles}}}
     <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-  <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-          <nav class="tab-bar">
-              <section class="left-small">
-                  <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-              </section>
+</head>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
 
-              <section class="middle tab-bar-section">
-                  <img class="logo left" src="img/logo.jpg" />
-              </section>
+            <section class="middle tab-bar-section">
+                <img class="logo left" src="img/logo.jpg"/>
+            </section>
 
 
-          </nav>
+        </nav>
 
-          <aside class="left-off-canvas-menu">
-              <ul class="off-canvas-list">
-                  <li><a href="#contact" id="about"><img src="img/icons/about.png"/></a></li>
-                  <li><a href="#contact" id="proj"><img src="img/icons/proj.png"/></a></li>
-                  <li><a href="#contact" id="news"><img src="img/icons/news.png"/></a></li>
-                  <li><a href="#contact" id="cal"><img src="img/icons/cal.png"/></a></li>
-                  <li><a href="#contact" id="join"><img src="img/icons/join.png"/></a></li>
-                  <li><a href="#contact" id="blog"><img src="img/icons/blog.png"/></a></li>
-                  <li><a href="#contact" id="give"><img src="img/icons/give.png"/></a></li>
-              </ul>
-          </aside>
-          <section class="main-section">
-             {{>body}}
-          </section>
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><a href="#contact" id="about"><img src="img/icons/about.png"/></a></li>
+                <li><a href="#contact" id="proj"><img src="img/icons/proj.png"/></a></li>
+                <li><a href="#contact" id="news"><img src="img/icons/news.png"/></a></li>
+                <li><a href="#contact" id="cal"><img src="img/icons/cal.png"/></a></li>
+                <li><a href="#contact" id="join"><img src="img/icons/join.png"/></a></li>
+                <li><a href="#contact" id="blog"><img src="img/icons/blog.png"/></a></li>
+                <li><a href="#contact" id="give"><img src="img/icons/give.png"/></a></li>
+            </ul>
+        </aside>
+        <section class="main-section">
+            {{>body}}
+        </section>
 
-          <a class="exit-off-canvas"></a>
+        <a class="exit-off-canvas"></a>
 
-      </div>
-  </div>
+    </div>
+</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/foundation/foundation.offcanvas.js"></script>
-    <script src="js/Site.js"></script>
-  </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation.offcanvas.js"></script>
+<script src="js/Site.js"></script>
+{{{scripts}}}
+</body>
 </html>
