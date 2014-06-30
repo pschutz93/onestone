@@ -1,0 +1,9 @@
+@mixin justify-inline-block(){
+  text-align: justify;
+
+  &:after {
+    display:inline-block;
+    width:100%;
+    content:'';
+  }
+}

@@ -52,6 +52,10 @@ module.exports = function (grunt) {
             sass: {
                 files: ['scss/**/*.scss','slick/slick.scss'],
                 tasks: ['sass']
+            },
+            assemble:{
+                files:['templates/*.hbs','pages/*.hbs'],
+                tasks: ['assemble']
             }
 
         }
