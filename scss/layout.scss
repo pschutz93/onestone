@@ -74,10 +74,6 @@ footer{
     margin-bottom: rem-calc(15px);
     @include justify-inline-block;
 
-    a{
-      color:#000000;
-      text-decoration: underline;
-    }
   }
 
   .facebook{
