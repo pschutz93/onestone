@@ -7,6 +7,20 @@
   text-align: center;
 }
 
+ul{
+  max-width: rem-calc(300px);
+}
+
+p{
+  max-width: rem-calc(300px);
+  text-align: justify;
+}
+
+img.block{
+  display: block;
+  max-width: 300px;
+}
+
 .off-canvas-list {
   li {
     a {
@@ -15,7 +29,7 @@
       }
 
       &#about:hover {
-        background: rgb(253, 139, 38);
+        background: rgb(253,189,38);
       }
 
       &#proj:hover {
@@ -51,8 +65,12 @@
 
 
 .tab-bar-section .logo {
+  display: block;
   margin-top: rem-calc(5);
   height: rem-calc(44);
+  width: rem-calc(81);
+  background-size: cover;
+  background-image: url("../img/logo.jpg");
 }
 
 footer{
