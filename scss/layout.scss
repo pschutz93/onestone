@@ -1,3 +1,11 @@
+$about-color: rgb(253,189,38);
+$proj-color: rgb(0, 147, 208);
+$news-color: rgb(16, 134, 110);
+$cal-color: rgb(213, 42, 39);
+$join-color: rgb(153, 73, 155);
+$blog-color: rgb(170, 208, 55);
+$give-color: rgb(220,97,38);
+
 .middle{
   margin-left: auto;
   margin-right:auto;
@@ -21,6 +29,8 @@ img.block{
   max-width: 300px;
 }
 
+@include embed-responsively;
+
 .off-canvas-list {
   li {
     a {
@@ -29,31 +39,31 @@ img.block{
       }
 
       &#about:hover {
-        background: rgb(253,189,38);
+        background: $about-color;
       }
 
       &#proj:hover {
-        background: rgb(0, 147, 208);
+        background: $proj-color;
       }
 
       &#news:hover {
-        background: rgb(16, 134, 110);
+        background: $news-color;
       }
 
       &#cal:hover {
-        background: rgb(213, 42, 39);
+        background: $cal-color;
       }
 
       &#join:hover {
-        background: rgb(153, 73, 155);
+        background: $join-color;
       }
 
       &#blog:hover {
-        background: rgb(170, 208, 55);
+        background: $blog-color;
       }
 
-      &#join:hover {
-        background: rgb(220, 97, 38);
+      &#give:hover {
+        background: $give-color;
       }
     }
   }

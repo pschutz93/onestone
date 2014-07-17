@@ -1,0 +1,11 @@
+#joinPage{
+  @include page-border($join-color);
+
+  img.small-12{
+    margin-bottom: rem-calc(20);
+  }
+
+  h1{
+    font-weight: bold;
+  }
+}

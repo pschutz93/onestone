@@ -1,0 +1,31 @@
+#projPage{
+  @include page-border($proj-color);
+
+  h1{
+    font-weight: bold;
+  }
+
+  .project{
+    @extend .middle;
+    position: relative;
+    max-width: rem-calc(312px);
+    margin-bottom: rem-calc(25px);
+
+  }
+
+  .project span{
+    font-size: 24pt;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    opacity: 0.7;
+    height: rem-calc(50px);
+  }
+
+  .project:hover span{
+    display: none;
+  }
+}
