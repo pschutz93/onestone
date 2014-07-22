@@ -22,6 +22,7 @@ ul{
 p{
   max-width: rem-calc(300px);
   text-align: justify;
+  @extend .middle;
 }
 
 img.block{

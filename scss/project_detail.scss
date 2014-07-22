@@ -1,0 +1,18 @@
+#projectDetail{
+  @include page-border($proj-color);
+
+  h1{
+    font-weight: bold;
+    @extend .center;
+  }
+
+  h3{
+    @extend .center;
+  }
+
+
+
+  .proj-logo{
+    max-width: rem-calc(300px);
+  }
+}
