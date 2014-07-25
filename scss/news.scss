@@ -1,0 +1,16 @@
+#newsPage{
+  @include page-border($news-color);
+  h1{
+    font-weight: bold;
+  }
+
+  h2{
+    text-align: justify;
+    max-width: rem-calc(300px);
+    @extend .middle;
+  }
+
+  .news-item .news-image{
+    text-align: center;
+  }
+}
