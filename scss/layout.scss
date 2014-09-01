@@ -6,12 +6,33 @@ $join-color: rgb(153, 73, 155);
 $blog-color: rgb(170, 208, 55);
 $give-color: rgb(220,97,38);
 
+nav#largeNav{
+  ul{
+    list-style-type: none;
+    max-width: rem-calc(1200px);
+
+    margin:0 auto;
+
+    li{
+      display: inline-block;
+
+
+      a{
+        display: inline-block;
+      }
+
+      img{
+        margin:rem-calc(10px);
+      }
+    }
+  }
+}
 .middle{
   margin-left: auto;
   margin-right:auto;
 }
 
-.center{
+.small-center{
   text-align: center;
 }
 
@@ -20,9 +41,7 @@ ul{
 }
 
 p{
-  max-width: rem-calc(300px);
   text-align: justify;
-  @extend .middle;
 }
 
 img.block{
@@ -32,7 +51,7 @@ img.block{
 
 @include embed-responsively;
 
-.off-canvas-list {
+.off-canvas-list, #largeNav {
   li {
     a {
       &:hover {
@@ -130,3 +149,8 @@ footer{
   }
 }
 
+@media #{$medium-only}{
+  h1{
+    font-size: 2rem;
+  }
+}

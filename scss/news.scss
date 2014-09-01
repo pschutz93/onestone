@@ -10,7 +10,12 @@
     @extend .middle;
   }
 
-  .news-item .news-image{
-    text-align: center;
-  }
+  .news-item{
+    .news-image{
+      text-align: center;
+    }
+
+    margin-bottom: rem-calc(20px);
+}
+
 }

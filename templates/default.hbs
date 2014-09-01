@@ -12,7 +12,7 @@
 <body>
 <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
-        <nav class="tab-bar">
+        <nav id="smallNav" class="tab-bar hide-for-large-up">
             <section class="left-small">
                 <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
             </section>
@@ -23,6 +23,16 @@
 
 
         </nav>
+        <nav id="largeNav" class="show-for-large-up"><ul class="">
+            <li><a href="home.html"><img src="img/logo.jpg" /></a></li>
+            <li><a href="about.html" id="about"><img src="img/icons/about.png"/></a></li>
+            <li><a href="projects.html" id="proj"><img src="img/icons/proj.png"/></a></li>
+            <li><a href="news.html" id="news"><img src="img/icons/news.png"/></a></li>
+            <li><a href="#contact" id="cal"><img src="img/icons/cal.png"/></a></li>
+            <li><a href="join.html" id="join"><img src="img/icons/join.png"/></a></li>
+            <li><a href="#contact" id="blog"><img src="img/icons/blog.png"/></a></li>
+            <li><a href="give.html" id="give"><img src="img/icons/give.png"/></a></li>
+        </ul></nav>
 
         <aside class="left-off-canvas-menu">
             <ul class="off-canvas-list">
@@ -54,7 +64,7 @@
                 <a class="flickr" href="https://www.flickr.com/photos/64436198@N04/" target="_blank"></a>
             </nav>
 
-            <p class="middle center">&copy; 2014 One Stone, Inc</p>
+            <p class="middle small-center">&copy; 2014 One Stone, Inc</p>
         </footer>
 
         <a class="exit-off-canvas"></a>
