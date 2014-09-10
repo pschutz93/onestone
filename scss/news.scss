@@ -6,7 +6,6 @@
 
   h2{
     text-align: justify;
-    max-width: rem-calc(300px);
     @extend .middle;
   }
 
@@ -17,5 +16,22 @@
 
     margin-bottom: rem-calc(20px);
 }
+
+  @media #{$medium-up}{
+    h2{
+      text-align: left;
+    }
+
+    img{
+      margin-top: rem-calc(20px);
+    }
+  }
+
+  @media #{$large-up} {
+    .news-item img{
+      min-height: 6rem;
+      width: auto;
+    }
+  }
 
 }

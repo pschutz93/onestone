@@ -73,7 +73,7 @@
     }
   }
 
-  @media #{large-up}{
+  @media #{$large-up}{
     .embed-container{
       max-height: rem-calc(500px);
     }
