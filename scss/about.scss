@@ -1,8 +1,81 @@
-#aboutPage{
+#aboutPage {
 
   @include page-border($about-color);
 
-  h1{
+  h1 {
     font-weight: bold;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .embed-container{
+    max-width: 100%;
+  }
+
+  img.middle{
+    display: block;
+  }
+
+  .row:nth-of-type(2) {
+    margin-top: rem-calc(25px);
+  }
+
+  @media #{$medium-up} {
+    h2 {
+      margin-left: rem-calc(15px);
+      text-align: left;
+    }
+    .mission {
+      p {
+        font-size: rem-calc(24pt);
+        font-style: italic;
+
+        @media #{$large-up} {
+          font-size: rem-calc(28pt);
+        }
+      }
+    }
+    div.medium-side-title {
+
+      padding: rem-calc(10px) 0;
+
+    }
+
+    .overview {
+      margin-bottom: rem-calc(40px);
+
+      div {
+
+        h2 {
+          margin-top: rem-calc(25px);
+        }
+
+        img {
+          margin-top: rem-calc(-30px);
+        }
+      }
+    }
+
+    .embed-container{
+      max-height: rem-calc(350px);
+      max-width: 90%;
+      margin: rem-calc(25px) auto;
+    }
+
+    .leadership {
+      div {
+        h2 {
+          margin-top: rem-calc(100px);
+        }
+      }
+    }
+  }
+
+  @media #{large-up}{
+    .embed-container{
+      max-height: rem-calc(500px);
+    }
   }
 }
