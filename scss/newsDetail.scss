@@ -2,12 +2,16 @@
 
   @include page-border($news-color);
   h1{
-    max-width: rem-calc(300px);
+
     text-align: justify;
     @extend .middle;
   }
 
   img{
     text-align: center;
+  }
+
+  .row img{
+    display: block;
   }
 }
