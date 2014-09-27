@@ -8,22 +8,22 @@
   .project{
     @extend .middle;
     position: relative;
-    max-width: rem-calc(312px);
+    width: rem-calc(312px);
     margin-bottom: rem-calc(25px);
 
   }
 
   .project{
     span{
-      font-size: 24pt;
+      font-size: 22pt;
       position: absolute;
-      bottom: 0;
+      bottom: rem-calc(0px);
       text-align: center;
       display: block;
       width: 100%;
       background: #ffffff;
       opacity: 0.7;
-      height: rem-calc(50px);
+      height: rem-calc(60px);
       padding-top: rem-calc(10px);
     }
 

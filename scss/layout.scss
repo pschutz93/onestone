@@ -32,12 +32,8 @@ nav#largeNav{
   margin-right:auto;
 }
 
-.small-center{
+.small-center, .center{
   text-align: center;
-}
-
-ul{
-  max-width: rem-calc(300px);
 }
 
 p{
@@ -145,12 +141,18 @@ footer{
   }
 
   .flickr{
-    background-image: url("../img/icons/flickr.png");
+    background-image: url("http://localhost:3003/img/icons/flickr.png");
   }
 }
 
 @media #{$medium-only}{
   h1{
     font-size: 2rem;
+  }
+}
+
+@media #{$large-up} {
+  .small-center{
+    text-align: left;
   }
 }

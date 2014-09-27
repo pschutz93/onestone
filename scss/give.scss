@@ -20,7 +20,15 @@
   }
 
   blockquote{
+    margin: 0 auto;
     max-width: rem-calc(300);
     color: #000000;
+  }
+
+  @media #{$medium-up} {
+    blockquote{
+      max-width: auto;
+      margin: 0 rem-calc(35px);
+    }
   }
 }

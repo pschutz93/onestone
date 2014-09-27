@@ -1,18 +1,46 @@
-#projectDetail{
+#projectDetail {
   @include page-border($proj-color);
 
-  h1{
+  h1 {
     font-weight: bold;
     @extend .center;
   }
 
-  h3{
+  h3 {
     @extend .center;
+    font-size: rem-calc(28pt);
   }
 
+  .proj-logo {
+    display: block;
 
+  }
 
-  .proj-logo{
-    max-width: rem-calc(300px);
+  .focus {
+    font-size: rem-calc(23pt);
+    font-style: italic;
+  }
+
+  .small-block-grid-2 {
+    margin-top: rem-calc(35px);
+    margin-bottom: rem-calc(35px);
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  @media #{$medium-up} {
+    .medium-emphasis {
+      margin-top: rem-calc(15px);
+      margin-bottom: rem-calc(15px);
+    }
+  }
+
+  @media #{$medium-only} {
+    .clear {
+      clear: left;
+    }
   }
 }
