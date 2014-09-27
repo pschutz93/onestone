@@ -1,0 +1,9 @@
+#calPage {
+  .embed-container {
+    min-height: rem-calc(600px);
+
+    @media #{$large-up} {
+      min-height: rem-calc(800px);
+    }
+  }
+}
