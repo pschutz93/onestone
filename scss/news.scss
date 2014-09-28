@@ -1,8 +1,5 @@
 #newsPage{
   @include page-border($news-color);
-  h1{
-    font-weight: bold;
-  }
 
   h2{
     text-align: justify;

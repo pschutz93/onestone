@@ -1,10 +1,6 @@
 #givePage{
   @include page-border($give-color);
 
-  h1{
-    font-weight: bold;
-  }
-
   div.small-12>img{
     margin-bottom: rem-calc(20);
   }

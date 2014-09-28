@@ -60,8 +60,8 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+ $primary-color: #444444;
+ $secondary-color: lighten($primary-color, 30%);
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -364,7 +364,7 @@
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-// $button-function-factor: -20%;
+ $button-function-factor: 30%;
 
 // We use these to control button border styles.
 // $button-border-width: 0px;

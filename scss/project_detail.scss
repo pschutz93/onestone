@@ -1,11 +1,6 @@
 #projectDetail {
   @include page-border($proj-color);
 
-  h1 {
-    font-weight: bold;
-    @extend .center;
-  }
-
   h3 {
     @extend .center;
     font-size: rem-calc(28pt);

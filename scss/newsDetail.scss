@@ -2,7 +2,6 @@
 
   @include page-border($news-color);
   h1{
-
     text-align: justify;
     @extend .middle;
   }

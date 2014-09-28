@@ -1,0 +1,14 @@
+#contact{
+  h3{
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline;
+  }
+
+  #contact-info .row{
+    margin-bottom: rem-calc(15px);
+    div{
+      padding-left: rem-calc(40px);
+    }
+  }
+}

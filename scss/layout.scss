@@ -27,6 +27,12 @@ nav#largeNav{
     }
   }
 }
+
+h1{
+  font-weight: bold;
+  text-align: center;
+}
+
 .middle{
   margin-left: auto;
   margin-right:auto;
@@ -143,6 +149,10 @@ footer{
   .flickr{
     background-image: url("http://localhost:3003/img/icons/flickr.png");
   }
+}
+
+.first-content{
+  margin-top: rem-calc(30px);
 }
 
 @media #{$medium-only}{

@@ -1,10 +1,6 @@
 #projPage{
   @include page-border($proj-color);
 
-  h1{
-    font-weight: bold;
-  }
-
   .project{
     @extend .middle;
     position: relative;
