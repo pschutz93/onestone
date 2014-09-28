@@ -7,8 +7,11 @@
 
   #contact-info .row{
     margin-bottom: rem-calc(15px);
-    div{
-      padding-left: rem-calc(40px);
+
+    @media #{$medium-up}{
+      div{
+        padding-left: rem-calc(40px);
+      }
     }
   }
 }
